@@ -24,11 +24,13 @@ This project was developed as a **Term Project** to demonstrate secure coding pr
 * **Testing:** `pytest` (Unit & Integration Tests)
 * **Configuration:** `python-dotenv` (Environment Variable Management)
 
-# Status Explanation
-200- Successful
-403- Forbidden 
-404- Not Found
-500- Server Error
+## Status Explanation
+
+* **200- Successful**
+* **403- Forbidden**
+* **404- Not Found**
+* **500- Server Error**
+
 ---
 
 ## Project Structure
@@ -51,15 +53,20 @@ secure-headers-auditor/
 ├── requirements.txt      # Project dependencies
 └── README.md             # Project documentation
 
-# INSTALLATION
+```
+---
+
+## INSTALLATION
 
 -Clone the Repository
-
+```bash
 git clone [https://github.com/your-username/secure-headers-auditor.git](https://github.com/your-username/secure-headers-auditor.git)
+
 cd secure-headers-auditorInstallation
+```
 
 -Create a Virtual Environment
-
+```bash
 # Windows
 python -m venv .venv
 .venv\Scripts\activate
@@ -67,17 +74,23 @@ python -m venv .venv
 # macOS/Linux
 python3 -m venv .venv
 source .venv/bin/activate
+```
 
 -Install Dependencies
-
+```bash
 pip install -r requirements.txt
+```
 
 -Configuration (.env) Ensure the .env file exists in the root directory
-
+```bash
 TIMEOUT=10
 LOG_LEVEL=INFO
 USER_AGENT="Mozilla/5.0 (Compatible; SecurityAuditor/1.0)"
+```
+---
 
-# USAGE
+## USAGE
 
+```bash
 python main.py (to start)
+```
